@@ -1,0 +1,121 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Dancing Script', cursive;
+    
+}
+$yellow: #FDE900;
+
+html {
+    font-size: 62.5%;
+    height: 100%;
+  }
+
+
+
+  .weather{
+      height: 130px;
+      width: 267px;
+      background-color: #000;
+      margin-top: 50px;
+      border-radius: 18px;
+  }
+
+
+.backgroundSVG{
+    &--left{
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: -100;
+        right: 0;
+        width: 100%; height: auto; 
+        max-width: 700px;
+    }
+    &--right{
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        z-index: -100;
+        width: 60%; height: auto; 
+    }
+}
+
+.header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 5px;
+    background: linear-gradient(90deg, rgba(230, 215, 89, 0.73) 31.77%, rgba(153, 183, 64, 0.98) 45.68%);
+    &__title{ 
+        font-size: 2.2rem;
+        // font-weight: 700;
+    }
+    &__hamburger{
+        width: 28px;
+        height: 18px;
+        // background-color: $yellow;
+        border: none;
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &__hamBar{
+        width: 100%;
+        height: 3px;
+        background-color: $yellow;
+    }
+}
+
+.nav{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 90%;
+    top: 10%;
+    background: linear-gradient(160.12deg, rgba(230, 215, 89, 0.73) 0%, rgba(153, 183, 64, 0.98) 71.17%);
+    border: 2px solid #FDE900;
+
+    &__item{
+        font-size: 4rem;
+        position: relative;
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        &::before{
+            content: '';
+            height: 50%;
+            width: 2px;
+            background-color: #fff;
+            position: absolute;
+            bottom: 0;
+            left: -10px;
+            transition: width .3s;
+            z-index: -10;
+        }
+        
+    }
+    .nav__item:hover{
+        
+            &::before{
+                width: calc(100% + 20px);
+                z-index: -10;
+            }
+
+        
+    }
+    .active{
+        &::before{
+            width: calc(100% + 20px);
+            z-index: -10;
+        }
+    }
+}

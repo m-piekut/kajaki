@@ -1,23 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
-
+import {ReactComponent as LeftSVG} from './images/leftSVG.svg'
+import {ReactComponent as RightSVG} from './images/rightSVG.svg'
+import Header from './Header';
+import Home from './Home';
+import './css/style.css'
+import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
+import Navigation from './components/Navigation';
+import { useState } from 'react';
 function App() {
+  const [showNav, setShowNav] = useState(false)
+
+  const showNavigation = ()=>{
+    setShowNav(!showNav)
+  }
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <LeftSVG className="backgroundSVG backgroundSVG--left"/>
+    <RightSVG className="backgroundSVG backgroundSVG--right"/>
+    <Header showNav={()=> showNavigation()} />
+    <Router>
+      {
+        showNav &&
+      <Navigation/>
+      }
+      <Switch>
+        <Route exact path='/'><Home/></Route>
+        {/* <Route  path='/projects'><Projects/></Route>
+        <Route  path='/skills'><Skills/></Route>
+        <Route  path='/contact'><Contact/></Route> */}
+      </Switch>
+    </Router>
+
     </div>
   );
 }
