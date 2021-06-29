@@ -1,15 +1,17 @@
 import { NavLink } from "react-router-dom";
+import Weather from "./weather";
 
-const Navigation = () => {
+const Navigation = ({showNav}) => {
     return ( 
         <nav className="nav">
-            <NavLink className="nav__item" exact to="/">O nas</NavLink>
-            <NavLink className="nav__item" to="/aktualnosci">Aktualności</NavLink>
-            <NavLink className="nav__item"  to="/sprzet">Sprzęt</NavLink>
-            <NavLink className="nav__item"  to="/galeria">Galeria</NavLink>
-            <NavLink className="nav__item"  to="/kontakt">Kontakt</NavLink>
-            <NavLink className="nav__item"  to="/oferta">Oferta</NavLink>
-            <div className="weather"></div>
+            <NavLink onClick={()=>showNav()} className="nav__item" exact to="/">O nas</NavLink>
+            <NavLink onClick={()=>showNav()} className="nav__item" to="/aktualnosci">Aktualności</NavLink>
+            <NavLink onClick={()=>showNav()} className="nav__item"  to="/sprzet">Sprzęt</NavLink>
+            <NavLink onClick={()=>showNav()} className="nav__item"  to="/galeria">Galeria</NavLink>
+            <NavLink onClick={()=>showNav()} className="nav__item"  to="/kontakt">Kontakt</NavLink>
+            <NavLink onClick={()=>showNav()} className="nav__item"  to="/oferta">Oferta</NavLink>
+            <Weather/>
+            {/* <a href="http://facebook.pl" target="_blank"><i className="fab fa-facebook-f"></i></a> */}
         </nav>
      );
 }
