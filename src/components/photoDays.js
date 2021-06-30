@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import { db } from "../firebase";
+import AdminDelete from "./AdminDelete";
 
-const PhotoDays = ({clickHandler, id}) => {
+const PhotoDays = ({clickHandler, id, canDelete}) => {
     const [images, setImages] = useState('');
 
 
@@ -28,9 +29,15 @@ const PhotoDays = ({clickHandler, id}) => {
             <p className="galery__itemsTitle">{id}</p>
             <div className="galery__items">
             {images ? images.map(({id2, image})=>(
-
-                <img loading="lazy"  onClick={()=>clickHandler(image.image)} key={id2}  className="galery__item" src={image.image} alt="" /> 
-                )) : <div className="lds-ripple"><div></div><div></div></div>}
+                canDelete ? <div>
+                    <img loading="lazy"  onClick={()=>clickHandler(image.image)} key={id2}  className="galery__item" src={image.image} alt="" /> 
+                    <p>{id2}</p>
+                    <AdminDelete storageRef={`${id}/Images/`} collection='photos' imageName={image.name} id={id} id2={id2} photos={true}/>
+                </div>
+               :
+                    <img loading="lazy"  onClick={()=>clickHandler(image.image)} key={id2}  className="galery__item" photos={true} src={image.image} alt="" /> 
+                
+            )) : <div className="lds-ripple"><div></div><div></div></div>}
                 </div>
             </div>
      );

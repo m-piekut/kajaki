@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import gsap from 'gsap';
+import AdminDelete from "./AdminDelete";
 
-const Card = ({post, id}) => {
+const Card = ({post, id, canDelete}) => {
 
     const [content, setContent] = useState((post.content.slice(0, 150) + '...'))
     // if(content){
@@ -30,6 +31,7 @@ const Card = ({post, id}) => {
                 <p className="news__content">{content}</p>
 
                 <button className="news__button" onClick={() =>content === post.content ? setContent(post.content.slice(0, 150) + '...') : setContent(post.content)}>Więcej</button>
+                {canDelete && <AdminDelete id={id} collection='news'  imageName={post.name} storageRef={`news/${id}/Images/`} />}
             </div>
         </div> : <div className="lds-ripple"><div></div><div></div></div>
     );

@@ -3,11 +3,18 @@
 import { useEffect, useState } from "react";
 import AddNews from "./components/addNews";
 import AddPhotos from "./components/addPhotos";
+import Galery from './Galery'
+import News from './news'
 import { auth } from "./firebase";
 
 
 
 const Admin = () => {
+  const [showNews, setShowNews] = useState(false)
+  const [showGalery, setShowGalery] = useState(false)
+
+
+
     const [user, setUser] = useState('')
     const [logged, setLogged] = useState(null);
     const [email, setEmail] = useState('');
@@ -58,6 +65,10 @@ const Admin = () => {
             </form>
             <AddPhotos/>
             <AddNews/>
+            <button onClick={()=>setShowNews(!showNews)}>Pokaż/ schowaj aktualności</button>
+            {showNews && <News canDelete={true}/>}
+            <button onClick={()=>setShowGalery(!showGalery)}>Pokaż/ schowaj galerie</button>
+            {showGalery && <Galery canDelete={true}/>}
         </div>
      );
 }

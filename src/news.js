@@ -4,7 +4,7 @@ import Card from './components/Card';
 
 import {db} from './firebase'
 
-const News = () => {
+const News = ({canDelete}) => {
     const [news, setNews] = useState('')
     useEffect(()=>{
         db.collection('news').orderBy('date').onSnapshot(snapshot=>{
@@ -30,7 +30,7 @@ const News = () => {
         <div className="news">
              <h2 className=" pageTitle">Aktualności</h2>
              {news ? news.map(({id, post})=>(
-                  <Card key={id} post={post}  id={id} />
+                  <Card key={id} post={post}  id={id} canDelete={canDelete} />
                 )).reverse() : <div className="lds-ripple"><div></div><div></div></div>} 
         </div>
              )}

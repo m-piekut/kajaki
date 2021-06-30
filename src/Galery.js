@@ -4,7 +4,7 @@ import homeImg from './images/homeImg.jpg'
 import kajak from './images/kajak.jpg'
 import {db} from './firebase'
 import PhotoDays from './components/photoDays';
-const Galery = () => {
+const Galery = ({canDelete}) => {
     const [showPhoto, setShowPhoto] = useState(false)
     const [photo, setPhoto] = useState(null)
     const [days, setDays] = useState(null)
@@ -47,7 +47,7 @@ const Galery = () => {
              <h2 className=" pageTitle">Galeria</h2>
            
             {days&& days.map(({id, image})=>(
-                  <PhotoDays key={id} clickHandler={clickHandler}  id={id} />
+                  <PhotoDays key={id} clickHandler={clickHandler} canDelete={canDelete}  id={id} />
                 )).reverse()}
             {
                showPhoto&& <BigPhoto photo={photo} showPhoto={()=>setShowPhoto(false)}/>
