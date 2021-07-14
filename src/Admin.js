@@ -63,12 +63,15 @@ const Admin = () => {
                 <button onClick={(e)=>{login(e)}} type="submit" className="admin__button">Zaloguj</button>
                 <button onClick={(e)=> logOut(e)}  className="admin__button">Wyloguj</button>
             </form>
+            { logged&&  <div className="admin__console">
+
             <AddPhotos/>
             <AddNews/>
             <button onClick={()=>setShowNews(!showNews)}>Pokaż/ schowaj aktualności</button>
             {showNews && <News canDelete={true}/>}
             <button onClick={()=>setShowGalery(!showGalery)}>Pokaż/ schowaj galerie</button>
             {showGalery && <Galery canDelete={true}/>}
+            </div>}
         </div>
      );
 }

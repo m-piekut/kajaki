@@ -27,7 +27,7 @@ const AdminDelete = ({id, id2, collection, storageRef, imageName, photos}) => {
         }
     }
     return ( 
-            <button className="user-profile__deletePhoto" onClick={handelDelete}><i className="far fa-trash-alt"></i></button>
+            <button className="admin__delete" onClick={handelDelete}><i className="far fa-trash-alt"></i></button>
      );
 }
  

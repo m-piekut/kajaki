@@ -5,6 +5,10 @@ import Card from './components/Card';
 import {db} from './firebase'
 
 const News = ({canDelete}) => {
+
+    
+
+
     const [news, setNews] = useState('')
     useEffect(()=>{
         db.collection('news').orderBy('date').onSnapshot(snapshot=>{
@@ -28,6 +32,7 @@ const News = ({canDelete}) => {
 
     return ( 
         <div className="news">
+             
              <h2 className=" pageTitle">Aktualności</h2>
              {news ? news.map(({id, post})=>(
                   <Card key={id} post={post}  id={id} canDelete={canDelete} />

@@ -76,6 +76,7 @@
     &__image{
         top: 0;
         max-height: 100%;
+        width: auto;
     }
     &__cardDown{
         padding: 5px 10px;
@@ -97,6 +98,13 @@
             text-decoration: underline;
         }
     }
+ }
+ .admin{
+     .galery__item{
+         width: 90%;
+         margin: 5px;
+         border: 1px solid black;
+     }
  }
 
  .weather{

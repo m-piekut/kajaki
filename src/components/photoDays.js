@@ -29,9 +29,9 @@ const PhotoDays = ({clickHandler, id, canDelete}) => {
             <p className="galery__itemsTitle">{id}</p>
             <div className="galery__items">
             {images ? images.map(({id2, image})=>(
-                canDelete ? <div>
+                canDelete ?
+                 <div key={id2} className="admin__galeryItem">
                     <img loading="lazy"  onClick={()=>clickHandler(image.image)} key={id2}  className="galery__item" src={image.image} alt="" /> 
-                    <p>{id2}</p>
                     <AdminDelete storageRef={`${id}/Images/`} collection='photos' imageName={image.name} id={id} id2={id2} photos={true}/>
                 </div>
                :
