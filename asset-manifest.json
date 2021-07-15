@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/kajaki/static/css/main.b0e2a0a3.chunk.css",
+    "main.css": "/kajaki/static/css/main.7153b0a1.chunk.css",
     "main.js": "/kajaki/static/js/main.0be5c844.chunk.js",
     "main.js.map": "/kajaki/static/js/main.0be5c844.chunk.js.map",
     "runtime-main.js": "/kajaki/static/js/runtime-main.062fc7de.js",
@@ -8,7 +8,7 @@
     "static/js/2.5c48738f.chunk.js": "/kajaki/static/js/2.5c48738f.chunk.js",
     "static/js/2.5c48738f.chunk.js.map": "/kajaki/static/js/2.5c48738f.chunk.js.map",
     "index.html": "/kajaki/index.html",
-    "static/css/main.b0e2a0a3.chunk.css.map": "/kajaki/static/css/main.b0e2a0a3.chunk.css.map",
+    "static/css/main.7153b0a1.chunk.css.map": "/kajaki/static/css/main.7153b0a1.chunk.css.map",
     "static/js/2.5c48738f.chunk.js.LICENSE.txt": "/kajaki/static/js/2.5c48738f.chunk.js.LICENSE.txt",
     "static/media/do_cennika1.e7239601.jpg": "/kajaki/static/media/do_cennika1.e7239601.jpg",
     "static/media/do_cennika2.103b38a2.jpg": "/kajaki/static/media/do_cennika2.103b38a2.jpg",
@@ -22,7 +22,7 @@
   "entrypoints": [
     "static/js/runtime-main.062fc7de.js",
     "static/js/2.5c48738f.chunk.js",
-    "static/css/main.b0e2a0a3.chunk.css",
+    "static/css/main.7153b0a1.chunk.css",
     "static/js/main.0be5c844.chunk.js"
   ]
 }
