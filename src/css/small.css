@@ -16,5 +16,12 @@
     max-width: 300px;
     max-height: 200px;
   }
+  .offer__left {
+    width: 300px;
+  }
+  .offer__down {
+    position: absolute;
+    top: 509px;
+  }
 }
 /*# sourceMappingURL=small.css.map */

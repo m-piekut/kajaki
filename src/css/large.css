@@ -45,11 +45,36 @@
   }
   .contact__info {
     width: 60%;
-    font-size: 5.3rem;
+    font-size: 3.3rem;
     max-width: 700px;
   }
   .contact__map {
     width: 40%;
+  }
+  .offer__left {
+    margin-left: 4vw;
+    font-size: 2.2rem;
+    width: 300px;
+  }
+  .offer__right {
+    width: 500px;
+    font-size: 1.4rem;
+    margin-right: 10vw;
+  }
+  .offer__SVG {
+    top: -100px;
+  }
+  .offer__down {
+    position: absolute;
+    padding: 5px 20px;
+    margin-left: 20px;
+    font-size: 2rem;
+    top: 550px;
+    width: 500px;
+  }
+  .offer__price {
+    position: relative;
+    top: -100px;
   }
 }
 /*# sourceMappingURL=large.css.map */

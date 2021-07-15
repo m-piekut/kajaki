@@ -23,4 +23,13 @@
             max-height: 200px;
         }
     }
+    .offer{
+        &__left{
+            width: 300px;
+        }
+        &__down{
+            position: absolute;
+            top: 509px;
+        }
+    }
 }

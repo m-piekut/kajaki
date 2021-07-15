@@ -50,7 +50,7 @@
             max-width: 500px;
         }
         &__text{
-         font-size: 2.3rem;
+         font-size: 1.6rem;
     }
     &__button{
         font-size: 3rem;
@@ -118,4 +118,38 @@
     width: 180px;
     margin-top: 0;
 }
+
+
+.offer{
+    li{
+        padding: 5px 10px ;
+    }
+    &__upper{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    &__left{
+        font-size: 1.8rem;
+        width: 300px;
+    }
+    &__right{
+        // font-size: 1.2rem;
+        width: 400px;
+    }
+    &__down, &__price{
+        font-size: 1.4rem;
+    }
+    &__down{
+        top: 600px;
+        width: 400px;
+    }
+    &__imagesWrapper{
+        flex-direction: row;
+    }
+    &__img{
+        margin: 10px 5px;
+    }
+}
+
+
 }

@@ -8,7 +8,7 @@ const OfferSVG = () => {
     
     const showPatch = (river)=>{
         gsap.set(river, {visibility:"visible"});
-        gsap.fromTo(river, {strokeWidth: 3}, {drawSVG:true, duration: 1, strokeWidth: 7, stroke: '#000', yoyo: true, repeat:-1});
+        gsap.fromTo(river, {strokeWidth: 3}, {drawSVG:true, duration: 1, strokeWidth: 9, stroke: '#000', yoyo: true, repeat:-1});
         
     }
     const stopAnimation = (river)=>{

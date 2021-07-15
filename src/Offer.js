@@ -1,6 +1,7 @@
 import OfferSVG from "./components/offerSVG";
 import gsap from 'gsap';
-
+import img1 from './images/do_cennika1.jpg'
+import img2 from './images/do_cennika2.jpg'
 
 
 
@@ -12,6 +13,7 @@ const Offer = () => {
                 <p className="offer__left">Dostosujemy trasę do Państwa możliwości i doświadczenia tak, aby każdy był zadowolony.</p>
                 <section className="offer__right">
                     <p className="offer__routesTitle">Nasze propozycje: </p>
+                    <p className="offer__tip">Żeby sprawdzić długość najedz na informacje o trasie.</p>
                     <ul className="offer__routes">
                     <p className="offer__routesOptions">Najkrótsza trasa – dla Rodzin z małymi dziećmi:</p>
                         <ul>
@@ -33,6 +35,19 @@ const Offer = () => {
             </div>
                 <OfferSVG/>
                 <p className="offer__down">Zachęcamy również do dłuższych lub krótszych postojów na plażach i napotkanych wyspach. Przypominamy o konieczności zabierania po sobie śmieci. Rzeka jest naszym wspólnym dobrem. Dbajmy o nią!</p>
+                <div className="offer__price">
+                    <p className="offer__priceText">
+                        Koszt wynajęcia kajaka dwuosobowego to <span>50 zł  niezależnie od długości trasy.</span>
+                        <br/>
+                        Istnieje możliwość udostępnienia miejsca na ognisko lub grilla.
+                        <br/>
+                        Zaprzyjaźnione Panie ze „Stowarzyszenia Nasze Harasiuki” za niewielką opłatą mogą przygotować przepyszne potrawy z lokalnych produktów.
+                        <div className="offer__imagesWrapper">
+                            <img src={img1} className="offer__img" alt="koło gospodyń"/>
+                            <img src={img2} className="offer__img" alt="kołog gospodyń 2 grill" />
+                        </div>
+                    </p>
+                </div>
         </div>
      );
 }
