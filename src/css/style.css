@@ -2,10 +2,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Dancing Script', cursive;
 }
 
 html {
+  font-family: 'Montserrat', sans-serif;
   font-size: 62.5%;
   height: 100%;
 }
@@ -15,6 +15,7 @@ html {
 }
 
 .pageTitle {
+  font-family: 'Dancing Script', cursive;
   position: relative;
   font-size: 2.1rem;
   text-align: center;
@@ -36,6 +37,7 @@ html {
 }
 
 .weather {
+  font-family: 'Dancing Script', cursive;
   display: none;
   height: 130px;
   width: 300px;
@@ -92,6 +94,7 @@ html {
 }
 
 .header {
+  font-family: 'Dancing Script', cursive;
   position: sticky;
   z-index: 1000;
   top: 0;
@@ -238,6 +241,7 @@ html {
 }
 
 .home__buttons {
+  font-family: 'Dancing Script', cursive;
   margin: 10px auto;
   display: flex;
   justify-content: space-between;
@@ -312,19 +316,23 @@ html {
 }
 
 .news__title {
-  font-size: 2.1rem;
+  font-size: 1.8rem;
   width: 100%;
   text-align: center;
+  margin-bottom: 10px;
 }
 
 .news__content {
   font-size: 1.2rem;
 }
 
+.news__buttons {
+  align-self: flex-end;
+}
+
 .news__button {
   font-family: 'Montserrat', sans-serif;
   margin: 10px;
-  align-self: flex-end;
   padding: 3px 6px;
   font-weight: bold;
   font-size: 0.8rem;
@@ -379,7 +387,8 @@ html {
   align-items: center;
 }
 
-.admin input, .admin button {
+.admin input,
+.admin button {
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -504,5 +513,59 @@ html {
     height: 120%;
     opacity: 0;
   }
+}
+
+.offer li {
+  list-style: inside;
+}
+
+.offer__upper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.offer__left {
+  padding: 10px;
+  width: 70%;
+  margin-bottom: 20px;
+  align-self: flex-start;
+}
+
+.offer__right {
+  background: linear-gradient(103.34deg, white 0%, rgba(233, 233, 233, 0.219) 100%, rgba(255, 255, 255, 0.144) 100%);
+  backdrop-filter: blur(16px);
+  padding: 10px;
+}
+
+.offer__SVG {
+  height: auto;
+  width: 100vw;
+}
+
+.offer__routesOptions {
+  text-decoration: underline;
+}
+
+.offer__routesOption {
+  margin: 2px 0;
+  text-decoration: none;
+}
+
+.offer__down {
+  padding: 0 10px;
+  width: 70%;
+}
+
+#river1, #river2, #river3, #river4, #river5 {
+  position: relative;
+  z-index: 0;
+}
+
+.offer__routesOption--1:hover #river1 {
+  z-index: 12 !important;
+  stroke-width: 12 !important;
+  stroke: black;
 }
 /*# sourceMappingURL=style.css.map */

@@ -71,13 +71,16 @@
   .news__cardDown {
     padding: 5px 10px;
     height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
   .news__title {
-    font-size: 3.5rem;
+    font-size: 2.2rem;
     margin-bottom: 10px;
   }
   .news__content {
-    font-size: 1.9rem;
+    font-size: 1.2rem;
   }
   .news__button {
     font-size: 1.2rem;

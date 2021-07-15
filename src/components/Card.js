@@ -29,9 +29,12 @@ const Card = ({post, id, canDelete}) => {
             <div className='news__cardDown'>
                 <h3 className="news__title">{post.title}</h3>
                 <p className="news__content">{content}</p>
-
-                <button className="news__button" onClick={() =>content === post.content ? setContent(post.content.slice(0, 150) + '...') : setContent(post.content)}>Więcej</button>
+                <div className="news__buttons">
+                    <button className="news__button">Zdjęcia</button>
+                    <button className="news__button" onClick={() =>content === post.content ? setContent(post.content.slice(0, 150) + '...') : setContent(post.content)}>Więcej</button>
                 {canDelete && <AdminDelete id={id} collection='news'  imageName={post.name} storageRef={`news/${id}/Images/`} />}
+
+                </div>
             </div>
         </div> : <div className="lds-ripple"><div></div><div></div></div>
     );

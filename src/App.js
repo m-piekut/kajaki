@@ -15,6 +15,7 @@ import NewsDetails from './NewsDetails';
 import Galery from './Galery';
 import Admin from './Admin';
 import Contact from './Contact';
+import Offer from './Offer';
 function App() {
   
   return (
@@ -31,6 +32,7 @@ function App() {
          <Route  path='/galeria'><Galery /></Route>
           <Route exact path='/admin'><Admin/></Route>
           <Route exact path='/kontakt'><Contact/></Route>
+          <Route exact path='/oferta'><Offer/></Route>
         {/* <Route  path='/contact'><Contact/></Route>  */}
       </Switch>
     </Router>

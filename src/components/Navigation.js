@@ -6,7 +6,6 @@ const Navigation = ({showNav}) => {
         <nav className="nav">
             <NavLink onClick={()=>showNav()} className="nav__item" exact to="/">O nas</NavLink>
             <NavLink onClick={()=>showNav()} className="nav__item" to="/aktualnosci">Aktualności</NavLink>
-            <NavLink onClick={()=>showNav()} className="nav__item"  to="/sprzet">Sprzęt</NavLink>
             <NavLink onClick={()=>showNav()} className="nav__item"  to="/galeria">Galeria</NavLink>
             <NavLink onClick={()=>showNav()} className="nav__item"  to="/kontakt">Kontakt</NavLink>
             <NavLink onClick={()=>showNav()} className="nav__item"  to="/oferta">Oferta</NavLink>
