@@ -26,14 +26,14 @@ const GaleryMain = () => {
         gsap.set([...items] , { zIndex: 0});
         gsap.set(items[0] , { zIndex: 0});
         tl
-        .fromTo(items[0], {top: '0'}, {top: 0, autoAlpha:1, duration:1.5})
-        .fromTo(items[1], {top: '-100%', autoAlpha: 0}, {top: 0, autoAlpha:1, duration:1.5})
-        .fromTo(items[2], {top: '200%', autoAlpha: 0}, {top: 0, autoAlpha:1, duration:1.5})
-        .fromTo(items[3], {left: '-100%', autoAlpha: 0}, {left: 0, autoAlpha:1, duration:1.5})
-        .fromTo(items[4], {right: '-100%', autoAlpha: 0}, {right: 0, autoAlpha:1, duration:1.5})
-        .fromTo(items[5], {top: '0', autoAlpha: 0}, {top: 0, autoAlpha:1, duration:1.5})
-        .fromTo(items[6], {top: '-100%', left: '-100%', autoAlpha: 0}, {top: 0,left: '0', autoAlpha:1, duration:1.5})
-        .fromTo(items[7], {top: '100%',left: '-100%', autoAlpha: 0}, {top: 0,left: '0', autoAlpha:1, duration:1.5})
+        .fromTo(items[0], {top: '0'}, {top: 0, autoAlpha:1, duration:3})
+        .fromTo(items[1], { autoAlpha: 0}, {autoAlpha:1, duration:3})
+        .fromTo(items[2], { autoAlpha: 0}, {autoAlpha:1, duration:3})
+        .fromTo(items[3], { autoAlpha: 0}, { autoAlpha:1, duration:3})
+        .fromTo(items[4], { autoAlpha: 0}, { autoAlpha:1, duration:3})
+        .fromTo(items[5], { autoAlpha: 0}, { autoAlpha:1, duration:3})
+        .fromTo(items[6], { autoAlpha: 0}, { autoAlpha:1, duration:3})
+        .fromTo(items[7], { autoAlpha: 0}, {autoAlpha:1, duration:3})
         // .fromTo(items[0], {top: '0'}, {top: 0, autoAlpha:1, duration:1.5})
         // .fromTo(items[1], {top: '0', autoAlpha: 0}, {top: 0, autoAlpha:1, duration:1})
         // .fromTo(items[2], {top: '0', autoAlpha: 0}, {top: 0, autoAlpha:1, duration:1})
