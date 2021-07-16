@@ -4,6 +4,8 @@ import homeImg from './images/homeImg.jpg'
 import kajak from './images/kajak.jpg'
 import {db} from './firebase'
 import PhotoDays from './components/photoDays';
+import GaleryMain from './GaleryMain';
+import { Route, Switch } from 'react-router-dom';
 const Galery = ({canDelete}) => {
     const [showPhoto, setShowPhoto] = useState(false)
     const [photo, setPhoto] = useState(null)
@@ -46,13 +48,18 @@ const Galery = ({canDelete}) => {
         <div className="galery">
              <h2 className=" pageTitle">Galeria</h2>
            
-            {days&& days.map(({id, image})=>(
+            {/* {days&& days.map(({id, image})=>(
                   <PhotoDays key={id} clickHandler={clickHandler} canDelete={canDelete}  id={id} />
                 )).reverse()}
             {
-               showPhoto&& <BigPhoto photo={photo} showPhoto={()=>setShowPhoto(false)}/>
-
-            }
+                
+            } */}
+            
+            <Switch>
+                <Route exact path='/galeria'><GaleryMain/></Route>
+                <Route  path='/galeria/:id'><PhotoDays clickHandler={clickHandler} canDelete={canDelete}  /></Route>
+            </Switch>
+            {showPhoto&& <BigPhoto photo={photo} showPhoto={()=>setShowPhoto(false)}/>}
         </div>
      );
 }

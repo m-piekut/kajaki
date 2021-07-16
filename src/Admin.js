@@ -1,6 +1,6 @@
 
 
-import { useEffect, useState } from "react";
+import {  useState } from "react";
 import AddNews from "./components/addNews";
 import AddPhotos from "./components/addPhotos";
 import Galery from './Galery'
@@ -28,8 +28,8 @@ const Admin = () => {
           
         })
         .catch((error) => {
-          var errorCode = error.code;
-          var errorMessage = error.message;
+          // var errorCode = error.code;
+          // var errorMessage = error.message;
         });
     }
     const logOut = (e)=>{

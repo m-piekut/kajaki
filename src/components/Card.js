@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import gsap from 'gsap';
 import AdminDelete from "./AdminDelete";
+import { Link } from "react-router-dom";
 
 const Card = ({post, id, canDelete}) => {
 
@@ -30,7 +31,8 @@ const Card = ({post, id, canDelete}) => {
                 <h3 className="news__title">{post.title}</h3>
                 <p className="news__content">{content}</p>
                 <div className="news__buttons">
-                    <button className="news__button">Zdjęcia</button>
+                   {post.link && <Link to={post.link}><button className="news__button">Zdjęcia</button></Link>}
+                   
                     <button className="news__button" onClick={() =>content === post.content ? setContent(post.content.slice(0, 150) + '...') : setContent(post.content)}>Więcej</button>
                 {canDelete && <AdminDelete id={id} collection='news'  imageName={post.name} storageRef={`news/${id}/Images/`} />}
 

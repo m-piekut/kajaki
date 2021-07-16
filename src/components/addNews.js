@@ -12,6 +12,7 @@ const AddNews = () => {
     const [newdate, setNewDate]  = useState(day + "-" + month + "-" + year); //dodaje dzisejszą datę
     const [title, setTitle] = useState('')
     const [content, setContent] = useState('')
+    const [link, setLink] = useState('')
     const [image, setImage]= useState('')
     const [loading, setLoading] = useState(false)
     const handleChange = (e)=>{
@@ -55,12 +56,14 @@ const AddNews = () => {
                         content: content,
                         image: url,
                         name: image.name,
-                        date: newdate
+                        date: newdate,
+                        link: link.slice(link.indexOf('galeria'), link.length)
                     });
                     // setProgress(0);
                     setImage(null);
                     setTitle('');
                     setContent('')
+                    setLink('')
                     alert('wysłałeś post')
                     setLoading(false)
                 })
@@ -85,10 +88,11 @@ const [post, setPost] = useState({})
     <div className="addPost">
 
     <form action="" className="admin__addThings">
-        <input type="date" required  name="" id="" onChange={e=> {setNewDate(e.target.value)}} />
+        <input type="date" required   onChange={e=> {setNewDate(e.target.value)}} />
         <input required onChange={e =>setTitle(e.target.value)} value={title} className="admin__item" type="text" name="" id="" placeholder="Tytuł" />
         <textarea required onChange={e =>setContent(e.target.value)} value={content} className="admin__item" name="" id="" cols="30" rows="10" placeholder='treść'></textarea>
         <input required className="user-profile__form-input" type="file" accept="image/*" onChange={handleChange}/>
+        <input type="text"  onChange={e =>setLink(e.target.value)} placeholder="link do galerii"/>
         {!loading ? <button onClick={(e)=>addPost(e)} >Dodaj Post</button> : <div className="lds-ripple"><div></div><div></div></div>}
     </form> 
 

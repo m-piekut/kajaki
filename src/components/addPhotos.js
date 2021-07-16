@@ -86,7 +86,8 @@ const AddPhotos = () => {
                         db.collection('photos').doc(`${newdate}`).set({
                             date: newdate
                         })
-                    }).then(resolve(setProgress(i), i++))
+                    }).then(resolve(setProgress(i), i++));
+                    
                 },
                 
                 
@@ -105,6 +106,9 @@ const AddPhotos = () => {
             await add(image)
         }
         alert('Wysłałeś zdjęcia')
+        db.collection('dates').doc(newdate).set({
+            date: newdate
+        })
         // setProgress(0)
         setLoading(false)
         // let i = 0

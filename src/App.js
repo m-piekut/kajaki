@@ -13,6 +13,7 @@ import { useState } from 'react';
 import News from './news';
 import NewsDetails from './NewsDetails';
 import Galery from './Galery';
+import GaleryMain from './GaleryMain';
 import Admin from './Admin';
 import Contact from './Contact';
 import Offer from './Offer';
