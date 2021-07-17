@@ -17,7 +17,6 @@ const GaleryMain = () => {
             return()=>{
                 setDates(null)
             }
-            return()=>setDates(null)
     },[])
     useEffect(() => {
         const tl = gsap.timeline({defaults: {ease: 'power3.inOut'}});
@@ -26,14 +25,19 @@ const GaleryMain = () => {
         gsap.set([...items] , { zIndex: 0});
         gsap.set(items[0] , { zIndex: 0});
         tl
-        .fromTo(items[0], {top: '0'}, {top: 0, autoAlpha:1, duration:3})
-        .fromTo(items[1], { autoAlpha: 0}, {autoAlpha:1, duration:3})
-        .fromTo(items[2], { autoAlpha: 0}, {autoAlpha:1, duration:3})
-        .fromTo(items[3], { autoAlpha: 0}, { autoAlpha:1, duration:3})
-        .fromTo(items[4], { autoAlpha: 0}, { autoAlpha:1, duration:3})
-        .fromTo(items[5], { autoAlpha: 0}, { autoAlpha:1, duration:3})
-        .fromTo(items[6], { autoAlpha: 0}, { autoAlpha:1, duration:3})
-        .fromTo(items[7], { autoAlpha: 0}, {autoAlpha:1, duration:3})
+        .fromTo(items[0], {top: '0'}, {top: 0, autoAlpha:1, duration:2})
+        .fromTo(items[1], { autoAlpha: 0}, {autoAlpha:1, duration:2})
+        .fromTo(items[2], { autoAlpha: 0}, {autoAlpha:1, duration:2})
+        .fromTo(items[3], { autoAlpha: 0}, { autoAlpha:1, duration:2})
+        .fromTo(items[4], { autoAlpha: 0}, { autoAlpha:1, duration:2})
+        .fromTo(items[5], { autoAlpha: 0}, { autoAlpha:1, duration:2})
+        .fromTo(items[6], { autoAlpha: 0}, { autoAlpha:1, duration:2})
+        .fromTo(items[7], { autoAlpha: 0}, {autoAlpha:1, duration:2})
+        
+
+
+
+
         // .fromTo(items[0], {top: '0'}, {top: 0, autoAlpha:1, duration:1.5})
         // .fromTo(items[1], {top: '0', autoAlpha: 0}, {top: 0, autoAlpha:1, duration:1})
         // .fromTo(items[2], {top: '0', autoAlpha: 0}, {top: 0, autoAlpha:1, duration:1})
