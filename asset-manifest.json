@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/kajaki/static/css/main.9b9c7aed.chunk.css",
+    "main.css": "/kajaki/static/css/main.1f114d81.chunk.css",
     "main.js": "/kajaki/static/js/main.a216d475.chunk.js",
     "main.js.map": "/kajaki/static/js/main.a216d475.chunk.js.map",
     "runtime-main.js": "/kajaki/static/js/runtime-main.062fc7de.js",
@@ -8,9 +8,9 @@
     "static/js/2.e60d44ea.chunk.js": "/kajaki/static/js/2.e60d44ea.chunk.js",
     "static/js/2.e60d44ea.chunk.js.map": "/kajaki/static/js/2.e60d44ea.chunk.js.map",
     "index.html": "/kajaki/index.html",
-    "static/css/main.9b9c7aed.chunk.css.map": "/kajaki/static/css/main.9b9c7aed.chunk.css.map",
+    "static/css/main.1f114d81.chunk.css.map": "/kajaki/static/css/main.1f114d81.chunk.css.map",
     "static/js/2.e60d44ea.chunk.js.LICENSE.txt": "/kajaki/static/js/2.e60d44ea.chunk.js.LICENSE.txt",
-    "static/media/style.css": "/kajaki/static/media/20210619_110116_040.6e732be0.jpg",
+    "static/media/style.css": "/kajaki/static/media/20210619_110116_040.b030c418.jpg",
     "static/media/do_cennika1.e7239601.jpg": "/kajaki/static/media/do_cennika1.e7239601.jpg",
     "static/media/do_cennika2.103b38a2.jpg": "/kajaki/static/media/do_cennika2.103b38a2.jpg",
     "static/media/homeImg.38eb2ddc.jpg": "/kajaki/static/media/homeImg.38eb2ddc.jpg",
@@ -23,7 +23,7 @@
   "entrypoints": [
     "static/js/runtime-main.062fc7de.js",
     "static/js/2.e60d44ea.chunk.js",
-    "static/css/main.9b9c7aed.chunk.css",
+    "static/css/main.1f114d81.chunk.css",
     "static/js/main.a216d475.chunk.js"
   ]
 }
