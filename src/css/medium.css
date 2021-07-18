@@ -2,43 +2,6 @@
   .pageTitle {
     font-size: 3.6rem;
   }
-  .header {
-    background: linear-gradient(90deg, rgba(230, 215, 89, 0.73) 31.77%, rgba(153, 183, 64, 0.98) 45.68%);
-  }
-  .header__title {
-    font-size: 3.2rem;
-    left: 80px;
-    top: 5px;
-  }
-  .header__titleWrapper {
-    position: absolute;
-    left: 80px;
-  }
-  .header__logo {
-    width: 60px;
-    height: auto;
-  }
-  .header__hamburger {
-    display: none;
-  }
-  .deskNav {
-    display: flex;
-  }
-  .deskNav__item {
-    font-size: 2rem;
-    margin: 0 10px;
-    text-decoration: none;
-    color: #000;
-    padding: 2px 4px;
-    border-radius: 15px;
-    border: 2px solid transparent;
-  }
-  .deskNav__item:hover {
-    border: 2px solid #fff;
-  }
-  .deskNav__item.active {
-    background-color: #fff;
-  }
   .home__textWrapper {
     top: 70vh;
     max-width: 500px;
@@ -96,13 +59,6 @@
     margin: 5px;
     border: 1px solid black;
   }
-  .weather {
-    display: block;
-    height: 80px;
-    right: 1px;
-    width: 180px;
-    margin-top: 0;
-  }
   .offer li {
     padding: 5px 10px;
   }
@@ -129,6 +85,56 @@
   }
   .offer__img {
     margin: 10px 5px;
+  }
+}
+
+@media only screen and (min-width: 850px) {
+  .header {
+    background: linear-gradient(90deg, rgba(230, 215, 89, 0.73) 31.77%, rgba(153, 183, 64, 0.98) 45.68%);
+  }
+  .header__title {
+    font-size: 3.2rem;
+    left: 80px;
+    top: 5px;
+  }
+  .header__titleWrapper {
+    position: absolute;
+    left: 80px;
+  }
+  .header__logo {
+    width: 60px;
+    height: auto;
+  }
+  .header__hamburger {
+    display: none;
+  }
+  .deskNav {
+    display: flex;
+  }
+  .deskNav__item {
+    font-size: 2rem;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #000;
+    padding: 2px 4px;
+    border-radius: 15px;
+    border: 2px solid transparent;
+  }
+  .deskNav__item:hover {
+    border: 2px solid #fff;
+  }
+  .deskNav__item.active {
+    background-color: #fff;
+  }
+  .weather {
+    display: block;
+    height: 80px;
+    right: 1px;
+    width: 180px;
+    margin-top: 0;
+  }
+  .regulamin__umowa {
+    top: 100px;
   }
 }
 /*# sourceMappingURL=medium.css.map */

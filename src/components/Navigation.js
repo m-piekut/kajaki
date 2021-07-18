@@ -8,6 +8,7 @@ const Navigation = ({showNav}) => {
             <NavLink onClick={()=>showNav()} className="nav__item" to="/aktualnosci">Aktualności</NavLink>
             <NavLink onClick={()=>showNav()} className="nav__item"  to="/galeria">Galeria</NavLink>
             <NavLink onClick={()=>showNav()} className="nav__item"  to="/kontakt">Kontakt</NavLink>
+            <NavLink onClick={()=>showNav()} className="nav__item"  to="/regulamin">Regulamin</NavLink>
             <NavLink onClick={()=>showNav()} className="nav__item"  to="/oferta">Oferta</NavLink>
             <Weather/>
             {/* <a href="http://facebook.pl" target="_blank"><i className="fab fa-facebook-f"></i></a> */}

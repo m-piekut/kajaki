@@ -1,6 +1,5 @@
 const Contact = () => {
-    // import doc from './images/UMOWA.docx'
-    {/* <p>Open a PDF file <a download href={doc}>example </a>.</p> */}
+    
     return ( 
         <div className="contact">
             <h2 className="pageTitle">Kontakt</h2>

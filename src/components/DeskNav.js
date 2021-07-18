@@ -8,6 +8,7 @@ const DeskNav = () => {
             <NavLink className="deskNav__item" to="/aktualnosci">Aktualności</NavLink>
             <NavLink className="deskNav__item"  to="/galeria">Galeria</NavLink>
             <NavLink className="deskNav__item"  to="/kontakt">Kontakt</NavLink>
+            <NavLink className="deskNav__item"  to="/regulamin">Regulamin</NavLink>
             <NavLink className="deskNav__item"  to="/oferta">Oferta</NavLink>
         </nav>
     );

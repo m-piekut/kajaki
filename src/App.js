@@ -17,6 +17,7 @@ import GaleryMain from './GaleryMain';
 import Admin from './Admin';
 import Contact from './Contact';
 import Offer from './Offer';
+import Regulamin from './Regulamin';
 function App() {
   
   return (
@@ -30,7 +31,8 @@ function App() {
         <Route exact path='/'><Home/></Route>
         <Route  exact path='/aktualnosci'><News c/></Route>
         <Route   path='/aktualnosci/:id'><NewsDetails/></Route>
-         <Route  path='/galeria'><Galery /></Route>
+         <Route  path='/galeria'><Galery /></Route> 
+         <Route  path='/regulamin'><Regulamin /></Route> 
           <Route exact path='/admin'><Admin/></Route>
           <Route exact path='/kontakt'><Contact/></Route>
           <Route exact path='/oferta'><Offer/></Route>
