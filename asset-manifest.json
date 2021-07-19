@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/kajaki/static/css/main.f3d573b7.chunk.css",
-    "main.js": "/kajaki/static/js/main.562ffe56.chunk.js",
-    "main.js.map": "/kajaki/static/js/main.562ffe56.chunk.js.map",
+    "main.js": "/kajaki/static/js/main.86fd784a.chunk.js",
+    "main.js.map": "/kajaki/static/js/main.86fd784a.chunk.js.map",
     "runtime-main.js": "/kajaki/static/js/runtime-main.062fc7de.js",
     "runtime-main.js.map": "/kajaki/static/js/runtime-main.062fc7de.js.map",
     "static/js/2.f1552364.chunk.js": "/kajaki/static/js/2.f1552364.chunk.js",
@@ -25,6 +25,6 @@
     "static/js/runtime-main.062fc7de.js",
     "static/js/2.f1552364.chunk.js",
     "static/css/main.f3d573b7.chunk.css",
-    "static/js/main.562ffe56.chunk.js"
+    "static/js/main.86fd784a.chunk.js"
   ]
 }
