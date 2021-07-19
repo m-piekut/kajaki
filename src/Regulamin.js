@@ -1,3 +1,5 @@
+import gsap from 'gsap';
+import { useEffect } from "react";
 import RegulaminItem from "./components/RegulaminItem";
 import doc from './images/UMOWA.docx'
 
@@ -21,7 +23,18 @@ const content = [
 
 
 const Regulamin = () => {
-    
+    useEffect(()=>{
+        const numbers = document.querySelectorAll('.regulamin__number')
+        const text = document.querySelectorAll('.regulamin__text')
+        gsap.set([ numbers, text], {autoAlpha:0})
+        const tl = gsap.timeline({defaults: {ease: 'power3.inOut'}});
+        tl
+        .addLabel('start')
+        .fromTo(numbers ,{autoAlpha: 0}, {autoAlpha: 1, stagger:.4,  duration: .5}, 'start')
+        .fromTo(text ,{y: -5, autoAlpha: 0}, {autoAlpha: 1, y: 0, stagger:.4,  duration: .5}, 'start+=0.2')
+    },[])
+
+
     return ( 
         <div className="regulamin">
         <h2 className="pageTitle">Regulamin</h2>
