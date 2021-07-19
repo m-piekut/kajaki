@@ -86,6 +86,10 @@
   .offer__img {
     margin: 10px 5px;
   }
+  .galery__dates {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 @media only screen and (min-width: 850px) {

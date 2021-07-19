@@ -425,16 +425,17 @@ html {
         // justify-content: center;
         align-items: center;
         position: relative;
-        overflow: hidden;
+        overflow-x: hidden;
         min-height: 100vh;
+        
     }
     &__date{
         z-index: 20;
         font-size: 3rem;
         padding: 10px 30px;
         margin: 20px auto;
-        background: rgba(255, 255, 255, 0.51);
-        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        background: rgba(255, 255, 255, 0.78);
+        box-shadow: 0 8px 32px 0 rgba(98, 103, 168, 0.842);
         backdrop-filter: blur( 9.5px );
         -webkit-backdrop-filter: blur( 9.5px );
         border-radius: 10px;
@@ -456,15 +457,19 @@ html {
         background-size: cover;
         background-repeat: no-repeat;
         // min-height: 100vh;
-        
-        &--1{background-image: url('../images/20210619_110116_017.jpg');}
-        &--2{background-image: url('../images/20210619_110116_020.jpg');}
-        &--3{background-image: url('../images/20210619_110116_023.jpg');}
-        &--4{background-image: url('../images/20210619_110116_026.jpg');}
-        &--5{background-image: url('../images/20210619_110116_029.jpg');}
-        &--6{background-image: url('../images/20210619_110116_032.jpg');}
-        &--7{background-image: url('../images/20210619_110116_035.jpg');}
-        &--8{background-image: url('../images/20210619_110116_040.jpg');}
+        // max-width: 400px;
+        &--1{background-image: url('../images/20210619_110116_017s.jpg');}
+        &--2{background-image: url('../images/20210619_110116_020s.jpg');}
+        &--3{background-image: url('../images/20210619_110116_023s.jpg');}
+        &--4{background-image: url('../images/20210619_110116_026s.jpg');}
+        &--5{background-image: url('../images/20210619_110116_029s.jpg');}
+        &--6{background-image: url('../images/20210619_110116_032s.jpg');}
+        &--7{background-image: url('../images/20210619_110116_035s.jpg');}
+        &--8{background-image: url('../images/20210619_110116_040s.jpg');}
+        &--9{
+            background-color: rgba(5, 5, 5, 0.692);
+
+        }
         // &--1{
         //     background-image: url('../images/11.jpg');
         // }
@@ -733,6 +738,7 @@ html {
         border: 1px solid rgba( 255, 255, 255, 0.18 );
         padding: 10px;
         width: 90%;
+        max-width: 800px;
         margin: 0 auto;
         display: flex;
         flex-direction: column;

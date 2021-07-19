@@ -61,6 +61,7 @@ const GaleryMain = () => {
             {dates && dates.map(({id, dates})=>(
                 <Link className="galery__date" key={id} to={`/galeria/${id}`}>{dates.date}</Link>
             ))}
+
             <div className="galery__bgItem galery__bgItem--1"></div>
             <div className="galery__bgItem galery__bgItem--2"></div>
             <div className="galery__bgItem galery__bgItem--3"></div>
@@ -69,6 +70,7 @@ const GaleryMain = () => {
             <div className="galery__bgItem galery__bgItem--6"></div>
             <div className="galery__bgItem galery__bgItem--7"></div>
             <div className="galery__bgItem galery__bgItem--8"></div>
+            <div className="galery__bgItem galery__bgItem--9"></div>
         </div>
      );
 }
