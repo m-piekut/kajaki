@@ -2,13 +2,14 @@ import firebase from "firebase";
 
 const firebaseApp = firebase.initializeApp(
   {
-    apiKey: "AIzaSyBiK612QgVrV1YUoPEh1O8wOey0Z5NbYgo",
-  authDomain: "kajaki-harasiuki.firebaseapp.com",
-  projectId: "kajaki-harasiuki",
-  storageBucket: "kajaki-harasiuki.appspot.com",
-  messagingSenderId: "1087142766678",
-  appId: "1:1087142766678:web:12d8522f1c5f6a3cd5b3f7",
-  measurementId: "G-GDMT4CPCML"
+    apiKey: "AIzaSyBU8beGT42jmQ-skIUGi5g1CDtan5H0zRM",
+  authDomain: "kajaki-48773.firebaseapp.com",
+  projectId: "kajaki-48773",
+  storageBucket: "kajaki-48773.appspot.com",
+  messagingSenderId: "576616273767",
+  appId: "1:576616273767:web:c065bf81a0a251082401c2",
+  measurementId: "G-CR0TWM2KRV"
+
 
   }
 );

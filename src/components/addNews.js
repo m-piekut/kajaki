@@ -87,13 +87,13 @@ const [post, setPost] = useState({})
     
     <div className="addPost">
 
-    <form action="" className="admin__addThings">
+    <form action="" className="admin__addThings" onSubmit={(e)=>addPost(e)}>
         <input type="date" required   onChange={e=> {setNewDate(e.target.value)}} />
         <input required onChange={e =>setTitle(e.target.value)} value={title} className="admin__item" type="text" name="" id="" placeholder="Tytuł" />
         <textarea required onChange={e =>setContent(e.target.value)} value={content} className="admin__item" name="" id="" cols="30" rows="10" placeholder='treść'></textarea>
         <input required className="user-profile__form-input" type="file" accept="image/*" onChange={handleChange}/>
         <input type="text"  onChange={e =>setLink(e.target.value)} placeholder="link do galerii"/>
-        {!loading ? <button onClick={(e)=>addPost(e)} >Dodaj Post</button> : <div className="lds-ripple"><div></div><div></div></div>}
+        {!loading ? <button type="submit"   >Dodaj Post</button> : <div className="lds-ripple"><div></div><div></div></div>}
     </form> 
 
 

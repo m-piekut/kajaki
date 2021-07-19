@@ -8,7 +8,7 @@ const GaleryMain = () => {
     const [dates, setDates] = useState('')
 
     useEffect(()=>{
-        db.collection('dates').onSnapshot(snapshot=>{
+        db.collection('dates').orderBy('date').onSnapshot(snapshot=>{
             setDates(snapshot.docs.map(doc => ({
              id : doc.id,
              dates: doc.data()
@@ -60,7 +60,7 @@ const GaleryMain = () => {
         <div className="galery__dates">
             {dates && dates.map(({id, dates})=>(
                 <Link className="galery__date" key={id} to={`/galeria/${id}`}>{dates.date}</Link>
-            ))}
+            )).reverse()}
 
             <div className="galery__bgItem galery__bgItem--1"></div>
             <div className="galery__bgItem galery__bgItem--2"></div>

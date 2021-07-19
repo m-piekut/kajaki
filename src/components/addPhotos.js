@@ -5,9 +5,8 @@ var dateObj = new Date();
 var month = dateObj.getUTCMonth() + 1; //months from 1-12
 var day = dateObj.getUTCDate();
 var year = dateObj.getUTCFullYear();
-const newdate = day + "-" + month + "-" + year; //dodaje dzisejszą datę
 const AddPhotos = () => {
-   
+    const [newdate, setNewDate]  = useState(day + "-" + month + "-" + year);
     
 
 
@@ -105,19 +104,14 @@ const AddPhotos = () => {
             i++
             await add(image)
         }
-        alert('Wysłałeś zdjęcia')
         db.collection('dates').doc(newdate).set({
             date: newdate
         })
+        alert('Wysłałeś zdjęcia')
         // setProgress(0)
         setLoading(false)
-        // let i = 0
-        // for  (const image of images) {
-
-        //     add(image).then(setProgress(i)).then(i++)
-           
-           
-        // }
+        setImages('')
+        setNewDate('')
         
         
         
@@ -129,9 +123,10 @@ const AddPhotos = () => {
 
     return ( 
         // <form className="new-dinner" onSubmit={addPhoto}>
-        <form className="admin__addThings" >
+        <form className="admin__addThings"  onSubmit={(e)=>addPhoto(e)}>
         <h3>Twóje zdjęcia</h3>
             {/* <input type="text" value={avatar} onChange={(e)=>setAvatar(e.target.value)}/> */}
+            <input type="date" required pattern="\d{2}-\d{2}-\d{4}"  onChange={e=> {setNewDate(e.target.value)}} />
             <p className="user-profile__form-procentage">{progress}/{images.length}</p>
             {/* <progress className="user-profile__form-progress" value={[70]} max="100"/> */}
             <progress className="user-profile__form-progress" value={[progress]} max={images.length}/>
@@ -139,7 +134,7 @@ const AddPhotos = () => {
             
         { 
         !loading ?
-            <button onClick={addPhoto}  className="primary-btn">Wyslij</button> :<div className="lds-ripple"><div></div><div></div></div>
+            <button type="submit"    className="primary-btn">Wyslij</button> :<div className="lds-ripple"><div></div><div></div></div>
         }
         </form>
      );

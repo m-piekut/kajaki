@@ -69,8 +69,6 @@ const Admin = () => {
             <AddNews/>
             <button onClick={()=>setShowNews(!showNews)}>Pokaż/ schowaj aktualności</button>
             {showNews && <News canDelete={true}/>}
-            <button onClick={()=>setShowGalery(!showGalery)}>Pokaż/ schowaj galerie</button>
-            {showGalery && <Galery canDelete={true}/>}
             </div>}
         </div>
      );
