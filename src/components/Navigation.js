@@ -11,7 +11,7 @@ const Navigation = ({showNav}) => {
             <NavLink onClick={()=>showNav()} className="nav__item"  to="/regulamin">Regulamin</NavLink>
             <NavLink onClick={()=>showNav()} className="nav__item"  to="/oferta">Oferta</NavLink>
             <Weather/>
-            {/* <a href="http://facebook.pl" target="_blank"><i className="fab fa-facebook-f"></i></a> */}
+            <a className="nav__item" href="https://www.facebook.com/Kajakiem-po-Tanwi-i-%C5%81adzie-113913240426054" target="_blank"><i className="fab fa-facebook-f"></i></a>
         </nav>
      );
 }

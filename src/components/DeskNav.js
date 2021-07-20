@@ -10,6 +10,7 @@ const DeskNav = () => {
             <NavLink className="deskNav__item"  to="/kontakt">Kontakt</NavLink>
             <NavLink className="deskNav__item"  to="/regulamin">Regulamin</NavLink>
             <NavLink className="deskNav__item"  to="/oferta">Oferta</NavLink>
+            <a className="deskNav__item" href="https://www.facebook.com/Kajakiem-po-Tanwi-i-%C5%81adzie-113913240426054" target="_blank"><i class="fab fa-facebook-f"></i></a>
         </nav>
     );
 }

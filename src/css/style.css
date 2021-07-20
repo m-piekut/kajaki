@@ -14,6 +14,10 @@ html {
   min-height: 100vh;
 }
 
+.fa-facebook-f {
+  color: blue;
+}
+
 .pageTitle {
   font-family: 'Dancing Script', cursive;
   position: relative;
@@ -155,6 +159,10 @@ html {
   top: 10%;
   background: linear-gradient(160.12deg, rgba(230, 215, 89, 0.73) 0%, rgba(153, 183, 64, 0.98) 71.17%);
   border: 2px solid #FDE900;
+}
+
+.nav a .fa-facebook-f {
+  margin-top: 10px;
 }
 
 .nav .weather {
