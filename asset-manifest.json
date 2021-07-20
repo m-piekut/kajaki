@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/kajaki/static/css/main.2744582d.chunk.css",
-    "main.js": "/kajaki/static/js/main.139db806.chunk.js",
-    "main.js.map": "/kajaki/static/js/main.139db806.chunk.js.map",
+    "main.css": "/kajaki/static/css/main.8b0f889c.chunk.css",
+    "main.js": "/kajaki/static/js/main.f2261a95.chunk.js",
+    "main.js.map": "/kajaki/static/js/main.f2261a95.chunk.js.map",
     "runtime-main.js": "/kajaki/static/js/runtime-main.062fc7de.js",
     "runtime-main.js.map": "/kajaki/static/js/runtime-main.062fc7de.js.map",
     "static/js/2.f1552364.chunk.js": "/kajaki/static/js/2.f1552364.chunk.js",
     "static/js/2.f1552364.chunk.js.map": "/kajaki/static/js/2.f1552364.chunk.js.map",
     "index.html": "/kajaki/index.html",
-    "static/css/main.2744582d.chunk.css.map": "/kajaki/static/css/main.2744582d.chunk.css.map",
+    "static/css/main.8b0f889c.chunk.css.map": "/kajaki/static/css/main.8b0f889c.chunk.css.map",
     "static/js/2.f1552364.chunk.js.LICENSE.txt": "/kajaki/static/js/2.f1552364.chunk.js.LICENSE.txt",
     "static/media/style.css": "/kajaki/static/media/20210619_110116_040s.1de31cbb.jpg",
     "static/media/UMOWA.de5d0f8d.docx": "/kajaki/static/media/UMOWA.de5d0f8d.docx",
@@ -24,7 +24,7 @@
   "entrypoints": [
     "static/js/runtime-main.062fc7de.js",
     "static/js/2.f1552364.chunk.js",
-    "static/css/main.2744582d.chunk.css",
-    "static/js/main.139db806.chunk.js"
+    "static/css/main.8b0f889c.chunk.css",
+    "static/js/main.f2261a95.chunk.js"
   ]
 }
