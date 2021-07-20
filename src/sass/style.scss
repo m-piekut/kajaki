@@ -112,14 +112,17 @@ html {
     padding: 5px 5px;
     background: linear-gradient(90deg, rgba(230, 215, 89, 0.73) 31.77%, rgba(153, 183, 64, 0.98) 45.68%);
     box-shadow: 3px 0 5px black;
-
+    &__logo{
+        height: 60px;
+        width: auto;
+    }
     &__title {
         font-size: 2.2rem;
         // font-weight: 700;
     }
 
     &__hamburger {
-        display: none;
+        // display: none;
         width: 28px;
         height: 18px;
         // background-color: $yellow;
@@ -128,6 +131,14 @@ html {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        cursor: pointer;
+        border: 1px solid $yellow;
+        padding: 4px;
+        box-sizing: content-box;
+        &:hover{
+            border: 1px solid white
+            
+        }
     }
 
     &__hamBar {

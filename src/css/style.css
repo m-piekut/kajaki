@@ -108,12 +108,16 @@ html {
   box-shadow: 3px 0 5px black;
 }
 
+.header__logo {
+  height: 60px;
+  width: auto;
+}
+
 .header__title {
   font-size: 2.2rem;
 }
 
 .header__hamburger {
-  display: none;
   width: 28px;
   height: 18px;
   border: none;
@@ -121,6 +125,14 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  cursor: pointer;
+  border: 1px solid #FDE900;
+  padding: 4px;
+  box-sizing: content-box;
+}
+
+.header__hamburger:hover {
+  border: 1px solid white;
 }
 
 .header__hamBar {
