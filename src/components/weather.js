@@ -11,7 +11,6 @@ const Weather = () => {
     
     const APIKey = '7e0ebe73694a3dc34d6b0b2bad8ac6f1'
     
-    let city= 'harasiuki'
     const lat = 50.474561145972025
     const lon = 22.472851132598038
     let part = 'dayily'
@@ -36,10 +35,9 @@ const Weather = () => {
         return()=>{
             setDailyData('')
         }
-    },[localDailyData])
+    },[localDailyData, url])
     useEffect(()=>{
         setLocalDailyData(JSON.parse(sessionStorage.getItem('localDailyData')))
-        console.log(JSON.parse(sessionStorage.getItem('localDailyData')))
         return()=>{
             setLocalDailyData('')
         }

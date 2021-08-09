@@ -3,7 +3,6 @@
 import {  useState } from "react";
 import AddNews from "./components/addNews";
 import AddPhotos from "./components/addPhotos";
-import Galery from './Galery'
 import News from './news'
 import { auth } from "./firebase";
 
@@ -11,11 +10,10 @@ import { auth } from "./firebase";
 
 const Admin = () => {
   const [showNews, setShowNews] = useState(false)
-  const [showGalery, setShowGalery] = useState(false)
 
 
 
-    const [user, setUser] = useState('')
+
     const [logged, setLogged] = useState(null);
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
@@ -24,7 +22,7 @@ const Admin = () => {
         auth.signInWithEmailAndPassword(email, password)
         .then((userCredential) => {
           // Signed in
-          setUser = userCredential.user;
+          
           
         })
         .catch((error) => {

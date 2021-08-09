@@ -1,7 +1,5 @@
 import { useEffect, useState } from 'react';
 import BigPhoto from './components/BigPhoto';
-import homeImg from './images/homeImg.jpg'
-import kajak from './images/kajak.jpg'
 import {db} from './firebase'
 import PhotoDays from './components/photoDays';
 import GaleryMain from './GaleryMain';
@@ -15,7 +13,6 @@ const Galery = ({canDelete}) => {
         setPhoto(test)
         setShowPhoto(!showPhoto)
     }
-    const [newDays, setNewDays] = ([])
 
     //pobiera wszystkie nazyw id w tym przypadku daty z kolekcji.
 
@@ -30,10 +27,7 @@ const Galery = ({canDelete}) => {
                 setDays(null)
             }
     },[])
-            useEffect(()=>{
-                days && days.map(item => console.log(item.id))
-            },[days])
-
+            
 
     if(showPhoto){
     window.addEventListener('keydown', (e)=>{

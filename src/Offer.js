@@ -1,5 +1,5 @@
 import OfferSVG from "./components/offerSVG";
-import gsap from 'gsap';
+
 import img1 from './images/do_cennika1.jpg'
 import img2 from './images/do_cennika2.jpg'
 

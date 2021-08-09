@@ -40,7 +40,7 @@ const AddPhotos = () => {
         if(i === (images.length )){
             setProgress(0)
         }
-    },[]
+    },[i, images.length]
     )
 
 

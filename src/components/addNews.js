@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { db, storage } from "../firebase";
-import Card from "./Card";
+
 
 var dateObj = new Date();
 var month = dateObj.getUTCMonth() + 1; //months from 1-12
@@ -74,7 +74,6 @@ const AddNews = () => {
     }
 }
 
-const [post, setPost] = useState({})
 
 
 

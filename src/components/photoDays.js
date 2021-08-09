@@ -19,7 +19,7 @@ const PhotoDays = ({clickHandler}) => {
             return()=>{
                 setImages(null)
             }
-    },[])
+    },[id])
     auth.onAuthStateChanged(function(user) {
         if (user) {
           // User is signed in.

@@ -7,13 +7,10 @@ import './css/small.css'
 import './css/medium.css'
 import './css/large.css'
 import './css/xlarge.css'
-import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
-import Navigation from './components/Navigation';
-import { useState } from 'react';
+import { Route, BrowserRouter as Router, Switch, HashRouter, BrowserRouter } from 'react-router-dom';
 import News from './news';
 import NewsDetails from './NewsDetails';
 import Galery from './Galery';
-import GaleryMain from './GaleryMain';
 import Admin from './Admin';
 import Contact from './Contact';
 import Offer from './Offer';
@@ -24,7 +21,9 @@ function App() {
     <div className="App">
     <LeftSVG className="backgroundSVG backgroundSVG--left"/>
     <RightSVG className="backgroundSVG backgroundSVG--right"/>
-    <Router>
+    <HashRouter>
+
+    
     <Header  />
      
       <Switch>
@@ -38,8 +37,9 @@ function App() {
           <Route exact path='/oferta'><Offer/></Route>
         {/* <Route  path='/contact'><Contact/></Route>  */}
       </Switch>
-    </Router>
+    
 
+    </HashRouter>
     </div>
   );
 }
