@@ -37,7 +37,7 @@ const Offer = () => {
                 <p className="offer__down">Zachęcamy również do dłuższych lub krótszych postojów na plażach i napotkanych wyspach. Przypominamy o konieczności zabierania po sobie śmieci. Rzeka jest naszym wspólnym dobrem. Dbajmy o nią!</p>
                 <div className="offer__price">
                     <p className="offer__priceText">
-                        Koszt wynajęcia kajaka dwuosobowego to <span>60 zł  niezależnie od długości trasy.</span>
+                        Koszt wynajęcia kajaka dwuosobowego to <span>60 zł (przy co najmniej dwóch kajakach)  niezależnie od długości trasy.</span>
                         <br/>
                         Istnieje możliwość udostępnienia miejsca na ognisko lub grilla.
                         <br/>
