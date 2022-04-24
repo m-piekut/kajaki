@@ -21,25 +21,19 @@ function App() {
     <div className="App">
     <LeftSVG className="backgroundSVG backgroundSVG--left"/>
     <RightSVG className="backgroundSVG backgroundSVG--right"/>
-    <HashRouter>
-
-    
+    <BrowserRouter>
     <Header  />
-     
       <Switch>
         <Route exact path='/'><Home/></Route>
         <Route  exact path='/aktualnosci'><News c/></Route>
         <Route   path='/aktualnosci/:id'><NewsDetails/></Route>
-         <Route  path='/galeria'><Galery /></Route> 
-         <Route  path='/regulamin'><Regulamin /></Route> 
-          <Route exact path='/admin'><Admin/></Route>
-          <Route exact path='/kontakt'><Contact/></Route>
-          <Route exact path='/oferta'><Offer/></Route>
-        {/* <Route  path='/contact'><Contact/></Route>  */}
+        <Route  path='/galeria'><Galery /></Route> 
+        <Route  path='/regulamin'><Regulamin /></Route> 
+        <Route exact path='/admin'><Admin/></Route>
+        <Route  path='/oferta'><Offer/></Route> 
+        <Route exact path='/kontakt'><Contact/></Route>
       </Switch>
-    
-
-    </HashRouter>
+    </BrowserRouter>
     </div>
   );
 }
